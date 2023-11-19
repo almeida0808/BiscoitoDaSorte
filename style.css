@@ -1,0 +1,194 @@
+/*FONTES:
+font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Tangerine', cursive;
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+
+
+body{
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+
+    background-color: aqua;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: url(images/SnapInsta.io-Cherry\ blossom\ [Wallpaper\ Engine].mp4);
+
+}
+
+main{
+    width:min(42.8rem, 90%) ;
+    background: rgb(218, 0, 0);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.50);
+    padding: 4.8rem;
+
+    border-radius: 6px;
+ 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.174);
+
+    animation: surgir 1s;
+}
+
+body video{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+@media(min-aspect-ratio: 16/9){
+    body video{
+        width: 100%;
+        height: auto;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+}
+.hide{
+    display: none;
+}
+
+/*TELA 1*/
+.text{
+    text-align: center;
+}
+.text h1{
+    font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 2.4rem;
+padding-bottom: 1.4rem;
+
+color: #AA2835;
+}
+
+.text p{
+    color: #430A08;
+    font-size: 1.5rem;
+    padding-bottom: 2.6rem;
+}
+
+.btnBiscoito{
+    background: none;
+    border: none;
+}
+.btnBiscoito:hover{
+    animation: treme 0.1s;
+    animation-iteration-count:infinite ;
+
+}
+
+/*TELA 2*/
+.tela2 h1{
+    color: #AA2835;
+
+
+text-align: center;
+font-size: 24px;
+font-weight: 700;
+padding-bottom: 1.7rem;
+}
+.tela2 .frase{
+
+    margin: 0 auto;
+    background: #430a0877;
+    font-family: 'Tangerine', cursive;
+    width: max-content;
+    box-shadow: 2px 2px 2px 0px rgba(138, 0, 0, 0.5);
+    border-radius: 8px;
+ padding: 1rem;
+
+animation: upToDown 0.8s;
+
+}
+
+.tela2 p{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+width: 23rem;
+
+}
+.img{
+    text-align: center;
+}
+.img img{
+padding-top: 6rem;
+width: 80%;
+
+}
+#formBtn{
+padding-top: 6rem;
+
+text-align: center;
+}
+
+.btnTentarDnv{
+    background: linear-gradient(90deg, hsla(354, 62%, 41%, 1) 0%, hsla(2, 79%, 15%, 1) 99%);
+
+    border: none;
+    border-radius: 5px;
+    padding: 1.6rem;
+    color: white;
+
+    transition: 0.2s;
+}
+
+.btnTentarDnv:hover{
+    filter: brightness(70%);
+    
+    
+}
+
+
+/*animações*/
+@keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+  }
+
+  @keyframes upToDown{
+    0%{
+        transform: translateY(340px);
+    visibility: 0;
+        scale: 0;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: 1;
+        scale: 1;
+    
+    }
+}
+
+@keyframes surgir{
+    0%{
+    visibility: 0;
+        scale: 0.3;
+    }
+    100%{
+        visibility: 1;
+        scale: 1;
+    
+    }
+}
